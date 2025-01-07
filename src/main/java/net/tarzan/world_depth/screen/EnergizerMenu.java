@@ -58,16 +58,16 @@ public class EnergizerMenu extends AbstractContainerMenu {
     }
 
     public int getScaledRedstone(){
-        int redstoneAmount= this.data.get(3);
-        int maxRedstone= this.data.get(4);
+        int redstoneAmount= this.data.get(2);
+        int maxRedstone= this.data.get(3);
         int redstoneProgressBarSize=50;
 
         return maxRedstone != 0 && redstoneAmount !=0 ? redstoneAmount * redstoneProgressBarSize / maxRedstone : 0;
     }
 
     public int getScaledChargedRedstone(){
-        int chargedRedstoneAmount= this.data.get(5);
-        int maxChargedRedstone= this.data.get(6);
+        int chargedRedstoneAmount= this.data.get(4);
+        int maxChargedRedstone= this.data.get(5);
         int chargedRedstoneProgressBarSize=50;
 
         return maxChargedRedstone != 0 && chargedRedstoneAmount !=0 ? chargedRedstoneAmount * chargedRedstoneProgressBarSize / maxChargedRedstone : 0;

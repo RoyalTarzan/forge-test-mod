@@ -61,10 +61,10 @@ public class EnergizerBlockEntity extends BlockEntity implements MenuProvider {
                 return switch (pIndex){
                     case 0->EnergizerBlockEntity.this.progress;
                     case 1->EnergizerBlockEntity.this.maxProgress;
-                    case 3->EnergizerBlockEntity.this.redstoneAmount;
-                    case 4->EnergizerBlockEntity.this.maxRedstone;
-                    case 5->EnergizerBlockEntity.this.chargedRedstoneAmount;
-                    case 6->EnergizerBlockEntity.this.maxChargedRedstone;
+                    case 2->EnergizerBlockEntity.this.redstoneAmount;
+                    case 3->EnergizerBlockEntity.this.maxRedstone;
+                    case 4->EnergizerBlockEntity.this.chargedRedstoneAmount;
+                    case 5->EnergizerBlockEntity.this.maxChargedRedstone;
                     default -> 0;
                 };
             }
@@ -74,10 +74,10 @@ public class EnergizerBlockEntity extends BlockEntity implements MenuProvider {
                 switch (pIndex){
                     case 0->EnergizerBlockEntity.this.progress=pValue;
                     case 1->EnergizerBlockEntity.this.maxProgress=pValue;
-                    case 3->EnergizerBlockEntity.this.redstoneAmount=pValue;
-                    case 4->EnergizerBlockEntity.this.maxRedstone=pValue;
-                    case 5->EnergizerBlockEntity.this.chargedRedstoneAmount=pValue;
-                    case 6->EnergizerBlockEntity.this.maxChargedRedstone=pValue;
+                    case 2->EnergizerBlockEntity.this.redstoneAmount=pValue;
+                    case 3->EnergizerBlockEntity.this.maxRedstone=pValue;
+                    case 4->EnergizerBlockEntity.this.chargedRedstoneAmount=pValue;
+                    case 5->EnergizerBlockEntity.this.maxChargedRedstone=pValue;
                 }
             }
 
@@ -164,20 +164,20 @@ public class EnergizerBlockEntity extends BlockEntity implements MenuProvider {
 
     private void redstoneIncrease() {
         if((this.itemHandler.getStackInSlot(REDSTONE_SLOT).getItem()== Items.REDSTONE) && redstoneAmount<=(maxRedstone-10)) {
-            this.data.set(3,redstoneAmount+10);
+            this.data.set(2,redstoneAmount+10);
             this.itemHandler.extractItem(REDSTONE_SLOT, 1, false);
         } else if ((this.itemHandler.getStackInSlot(REDSTONE_SLOT).getItem()==Items.REDSTONE_BLOCK) && redstoneAmount<=(maxRedstone-99)) {
-            this.data.set(3,redstoneAmount+99);
+            this.data.set(2,redstoneAmount+99);
             this.itemHandler.extractItem(REDSTONE_SLOT,1,false);
         }
     }
 
     private void chargedRedstoneIncrease(){
         if((this.itemHandler.getStackInSlot(CHARGED_REDSTONE_SLOT).getItem()== ModItems.CHARGED_REDSTONE.get()) && chargedRedstoneAmount<=(maxChargedRedstone-10)) {
-            this.data.set(5,chargedRedstoneAmount+10);
+            this.data.set(4,chargedRedstoneAmount+10);
             this.itemHandler.extractItem(CHARGED_REDSTONE_SLOT, 1, false);
         } else if ((this.itemHandler.getStackInSlot(CHARGED_REDSTONE_SLOT).getItem()== ModBlocks.CHARGED_REDSTONE_BLOCK.get().asItem()) && chargedRedstoneAmount<=(maxChargedRedstone-99)) {
-            this.data.set(5,chargedRedstoneAmount+99);
+            this.data.set(4,chargedRedstoneAmount+99);
             this.itemHandler.extractItem(CHARGED_REDSTONE_SLOT,1,false);
         }
     }
