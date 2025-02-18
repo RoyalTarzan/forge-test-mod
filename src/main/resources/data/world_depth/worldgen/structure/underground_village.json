@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:has_structure/mineshaft",
+  "terrain_adaptation": "beard_box",
+  "spawn_overrides": {},
+  "step": "underground_structures",
+  "start_pool": "world_depth:underground_village/village_centers",
+  "size": 7,
+  "start_height": {
+    "above_bottom": 6
+  },
+  "max_distance_from_center": 116,
+  "use_expansion_hack": true
+}

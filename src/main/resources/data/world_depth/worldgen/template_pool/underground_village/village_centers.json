@@ -1,0 +1,21 @@
+{
+  "name": "world_depth:underground_village/village_centers",
+  "fallback": "minecraft:empty",
+  "elements": [{
+    "weight": 1,
+    "element": {
+      "location": "world_depth:underground_village/village_centers/flat_disc",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 3,
+    "element": {
+      "location": "world_depth:underground_village/village_centers/shaft_entrance",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  }]
+}

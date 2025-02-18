@@ -1,0 +1,13 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 12342323,
+    "separation": 6,
+    "spacing": 15,
+    "spread_type": "triangular"
+  },
+  "structures": [{
+    "structure": "world_depth:underground_village",
+    "weight": 1
+  }]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "world_depth:underground_village/roads",
+  "fallback": "minecraft:empty",
+  "elements": [{
+    "weight": 1,
+    "element": {
+      "location": "world_depth:underground_village/roads/straight_road",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "world_depth:underground_village/roads/t_joint",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "world_depth:underground_village/roads/corner",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "world_depth:underground_village/roads/cross",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "element_type": "minecraft:empty_pool_element"
+    }
+  }]
+}

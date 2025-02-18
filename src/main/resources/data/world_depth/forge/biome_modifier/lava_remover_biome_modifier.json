@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "world_depth:lava_remover",
+  "step": "underground_ores"
+}

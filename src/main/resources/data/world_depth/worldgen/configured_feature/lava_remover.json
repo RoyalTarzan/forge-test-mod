@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "target": {
+              "Name": "minecraft:lava",
+              "Properties": {
+                "level": "0"
+              }
+            },
+            "state": {
+              "Name": "minecraft:air"
+            },
+            "radius": 12
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "target": {
+              "Name": "minecraft:lava",
+              "Properties": {
+                "level": "0"
+              }
+            },
+            "state": {
+              "Name": "minecraft:air"
+            },
+            "radius": 12
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

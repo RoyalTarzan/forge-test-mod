@@ -1,0 +1,21 @@
+{
+  "name": "world_depth:underground_village/roads",
+  "fallback": "minecraft:empty",
+  "elements": [{
+    "weight": 15,
+    "element": {
+      "location": "world_depth:underground_village/mineshaft/upwards_complete",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  },{
+    "weight": 1,
+    "element": {
+      "location": "world_depth:underground_village/mineshaft/upwards_partially_destroyed",
+      "processors": "minecraft:empty",
+      "projection": "rigid",
+      "element_type": "minecraft:single_pool_element"
+    }
+  }]
+}
