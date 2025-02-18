@@ -16,21 +16,21 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Multimap<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP;
             static {Multimap<ArmorMaterial, MobEffectInstance> map = ArrayListMultimap.create();
-                map.put(ModArmorMaterials.ENERGIZED_ALUMINIUM, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200,
+                map.put(ModArmorMaterials.ENERGIZED_ALUMINIUM, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1,
                         3, false, false, false));
-                map.put(ModArmorMaterials.ENERGIZED_ALUMINIUM, new MobEffectInstance(MobEffects.JUMP, 200, 4,
+                map.put(ModArmorMaterials.ENERGIZED_ALUMINIUM, new MobEffectInstance(MobEffects.JUMP, 1, 4,
                         false, false, false));
-                map.put(ModArmorMaterials.ENERGIZED_TITANIUM, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 3,
+                map.put(ModArmorMaterials.ENERGIZED_TITANIUM, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1, 3,
                         false, false, false));
-                map.put(ModArmorMaterials.ENERGIZED_TITANIUM, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 2,
+                map.put(ModArmorMaterials.ENERGIZED_TITANIUM, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1, 2,
                         false, false, false));
-                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1,
+                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1, 1,
                         false, false, false));
-                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.JUMP, 200, 2,
+                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.JUMP, 1, 2,
                         false, false, false));
-                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1,
+                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1, 1,
                         false, false, false));
-                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1,
+                map.put(ModArmorMaterials.TALIUM, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1, 11,
                         false, false, false));
                 MATERIAL_TO_EFFECT_MAP = map;
             }
